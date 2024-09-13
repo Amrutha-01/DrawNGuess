@@ -4,7 +4,7 @@ import io from "socket.io-client";
 import DrawingBoard from "../../../DrawingBoard/DrawingBoard";
 import Chat from "../../../Chat/Chat";
 import { useParams, useSearchParams } from "next/navigation";
-import { LeftPanel } from "@/app/components/LeftPanel/page";
+import LeftPanel from "@/app/components/LeftPanel/page";
 const socket = io("http://localhost:8001");
 
 export default function ChatRoom() {

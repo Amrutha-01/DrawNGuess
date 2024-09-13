@@ -4,7 +4,7 @@ import React from "react";
 interface ILeftPanel {
   usersInRoom: string[];
 }
-export const LeftPanel: React.FC<ILeftPanel> = ({ usersInRoom }) => {
+export default function LeftPanel({ usersInRoom }: ILeftPanel) {
   const clockStyle = {
     width: "50px",
     height: "50px",
@@ -38,4 +38,4 @@ export const LeftPanel: React.FC<ILeftPanel> = ({ usersInRoom }) => {
         usersInRoom.map((user) => <div key={user}>{user}</div>)}
     </div>
   );
-};
+}
