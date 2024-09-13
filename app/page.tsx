@@ -8,6 +8,7 @@ export default function Home() {
   const [roomToJoin, setRoomToJoin] = useState<string | null>(null); // State for the room ID to join
   const [isJoinRoomClicked, setIsJoinRoomClicked] = useState(false);
   const router = useRouter();
+
   const index = Math.floor(Math.random() * words.length);
 
   const handleCreateRoom = () => {

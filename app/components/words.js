@@ -383,4 +383,4 @@ const words = [
   "worm",
 ];
 
-export default words;
+module.exports = words;
