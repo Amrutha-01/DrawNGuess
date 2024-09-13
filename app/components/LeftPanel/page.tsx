@@ -4,7 +4,7 @@ import React from "react";
 interface ILeftPanel {
   usersInRoom: string[];
 }
-export default function LeftPanel({ usersInRoom }: ILeftPanel) {
+function LeftPanel({ usersInRoom }: ILeftPanel) {
   const clockStyle = {
     width: "50px",
     height: "50px",
@@ -39,3 +39,5 @@ export default function LeftPanel({ usersInRoom }: ILeftPanel) {
     </div>
   );
 }
+
+module.exports = LeftPanel;
