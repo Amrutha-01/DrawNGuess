@@ -1,10 +1,11 @@
 "use client";
+import exp from "constants";
 import React from "react";
 
 interface ILeftPanel {
   usersInRoom: string[];
 }
-function LeftPanel({ usersInRoom }: ILeftPanel) {
+const LeftPanel: React.FC<ILeftPanel> = ({ usersInRoom }) => {
   const clockStyle = {
     width: "50px",
     height: "50px",
@@ -38,6 +39,6 @@ function LeftPanel({ usersInRoom }: ILeftPanel) {
         usersInRoom.map((user) => <div key={user}>{user}</div>)}
     </div>
   );
-}
+};
 
-module.exports = LeftPanel;
+export default LeftPanel;
